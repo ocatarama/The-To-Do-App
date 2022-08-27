@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The 📝"To Do" App</title> 
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <span>The 📝"To Do" App</span>
+        </nav>
+
+        <div class="container">
+            <div class="menu">
+                <button class="menu-button" id="addTask">Add new task</button>
+                <button class="menu-button" id="clearList">Clear your tasks</button>
+            </div>
+
+            <div class="list-container" id="taskList">
+                <!-- TASK LIST -->
+            </div>
+
+            <div class="add-item-container" id="addForm">
+                <div class="add-item-container--close" id="addItemX">X</div>
+
+                <form class="item-picker">
+                    <span>
+                        <label for="title">Task: </label>
+                        <input type="text" placeholder="Title" id="form-title">
+                    </span>
+  
+                    <span>
+                        <label for="date">Due to:</label>
+                        <input type="date" placeholder="Pick the date" id="form-date">
+                    </span>
+
+                    <label for="priority">
+                        Select the priority:
+                        <select id="form-priority">
+                            <option>green</option>
+                            <option>yellow</option>
+                            <option>red</option>
+                        </select>
+                    </label>
+
+                    <button type="submit" class="add-item-button">Add task</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

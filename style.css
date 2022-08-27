@@ -1,0 +1,257 @@
+html, body{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height:100vh;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    background-image: linear-gradient(120deg, #fccb90 18%, #d57eeb 80%);
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+    background-image: linear-gradient(120deg, #fccb90 18%, #d57eeb 80%);
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.navbar span {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 20px;
+    color:wheat;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.container {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.menu {
+    padding: 5% 10%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.menu-button {
+    padding: 16px 32px;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: black;
+
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color:transparent;
+    transition: .2s ease;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.menu-button:active {
+    background-color: #FCCB90;
+}
+
+.list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-element {
+    border: 2px solid black;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 50px;
+    padding: 20px;
+
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.list-element--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex: 10;
+}
+
+.list-element--due {
+    font-size: 16px;
+    color: white;
+}
+
+.list-element--due:hover {
+    color: #FCCB90;
+}
+
+.list-element--priority {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.list-element--delete {
+    font-weight: bold;
+    text-align: right;
+    flex:1;
+}
+
+.list-element--delete span:hover {
+    cursor: pointer;
+    color: #FCCB90;
+}
+
+.list-element--delete span:active {
+    color: white;
+}
+
+.add-item-container {
+
+    position: fixed;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-image: linear-gradient(120deg, #fccb90 -60%, #d57eeb 160%);
+    padding: 20px 30px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-item-container--close {
+    cursor: pointer;
+    font-weight: bold;
+
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.add-item-container--close:hover {
+    color: white;
+}
+
+.add-item-container--close:active {
+    color: #FCCB90;
+}
+
+.item-picker {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-picker label {
+    margin-left: 10px;
+}
+
+.item-picker input {
+    display: block;
+    border:2px solid black;
+    border-radius: 30px;
+    padding: 10px 10px;
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+
+    width: 200px;
+}
+
+.item-picker input::placeholder {
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.add-item-button {
+    padding: 10px 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: black;
+
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color:transparent;
+    transition: .2s ease;
+}
+
+.add-item-button:hover {
+    cursor: pointer;
+    background-color: white ;
+}
+
+.add-item-butto:active {
+    background-color: #FCCB90;
+}
+
+/* ============ SCROLLBAR ============ */
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color:cornflowerblue;
+    border-radius: 20px;
+    width: 5px!important;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  .ScrollBarTop::-webkit-scrollbar-thumb {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  
+  .ScrollBarBot::-webkit-scrollbar-thumb {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
